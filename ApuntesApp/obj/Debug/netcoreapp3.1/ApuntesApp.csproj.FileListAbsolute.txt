@@ -11,3 +11,16 @@ C:\Users\Nico\source\repos\ApuntesApp\ApuntesApp\obj\Debug\netcoreapp3.1\Apuntes
 C:\Users\Nico\source\repos\ApuntesApp\ApuntesApp\obj\Debug\netcoreapp3.1\ApuntesApp.dll
 C:\Users\Nico\source\repos\ApuntesApp\ApuntesApp\obj\Debug\netcoreapp3.1\ApuntesApp.pdb
 C:\Users\Nico\source\repos\ApuntesApp\ApuntesApp\obj\Debug\netcoreapp3.1\ApuntesApp.genruntimeconfig.cache
+C:\Users\Nico\Desktop\ApuntesApp\ApuntesApp\bin\Debug\netcoreapp3.1\ApuntesApp.exe
+C:\Users\Nico\Desktop\ApuntesApp\ApuntesApp\bin\Debug\netcoreapp3.1\ApuntesApp.deps.json
+C:\Users\Nico\Desktop\ApuntesApp\ApuntesApp\bin\Debug\netcoreapp3.1\ApuntesApp.runtimeconfig.json
+C:\Users\Nico\Desktop\ApuntesApp\ApuntesApp\bin\Debug\netcoreapp3.1\ApuntesApp.runtimeconfig.dev.json
+C:\Users\Nico\Desktop\ApuntesApp\ApuntesApp\bin\Debug\netcoreapp3.1\ApuntesApp.dll
+C:\Users\Nico\Desktop\ApuntesApp\ApuntesApp\bin\Debug\netcoreapp3.1\ApuntesApp.pdb
+C:\Users\Nico\Desktop\ApuntesApp\ApuntesApp\obj\Debug\netcoreapp3.1\ApuntesApp.csproj.AssemblyReference.cache
+C:\Users\Nico\Desktop\ApuntesApp\ApuntesApp\obj\Debug\netcoreapp3.1\ApuntesApp.AssemblyInfoInputs.cache
+C:\Users\Nico\Desktop\ApuntesApp\ApuntesApp\obj\Debug\netcoreapp3.1\ApuntesApp.AssemblyInfo.cs
+C:\Users\Nico\Desktop\ApuntesApp\ApuntesApp\obj\Debug\netcoreapp3.1\ApuntesApp.csproj.CoreCompileInputs.cache
+C:\Users\Nico\Desktop\ApuntesApp\ApuntesApp\obj\Debug\netcoreapp3.1\ApuntesApp.dll
+C:\Users\Nico\Desktop\ApuntesApp\ApuntesApp\obj\Debug\netcoreapp3.1\ApuntesApp.pdb
+C:\Users\Nico\Desktop\ApuntesApp\ApuntesApp\obj\Debug\netcoreapp3.1\ApuntesApp.genruntimeconfig.cache

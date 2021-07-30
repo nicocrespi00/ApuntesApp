@@ -9,8 +9,6 @@ namespace ApuntesApp
             Control Controladores = new Control();
             Controladores.Inicio();
         }
-
-        
     }
 }
 

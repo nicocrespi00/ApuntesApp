@@ -41,7 +41,7 @@ namespace ApuntesApp
                 case 2:
                     Console.Clear();
                     Materias materiaElegida = ListarMaterias();
-                    MenuClases();
+                    MenuClases(materiaElegida);
                     break;
             }
         }
@@ -80,7 +80,7 @@ namespace ApuntesApp
                 return mat;
         }
 
-        private void MenuClases()
+        private void MenuClases(Materias mat)
         {
             int option = 0;
             while (option != 3)
@@ -94,21 +94,21 @@ namespace ApuntesApp
                 Console.Write("Opción elegida: ");
                 int.TryParse(Console.ReadLine(), out option);
                 if (option != 3)
-                    ManipularOpcion(option);
+                    ManipularOpcion(option, mat);
             }
         }
 
-        private void ManipularOpcion(int option)
+        private void ManipularOpcion(int option, Materias mat)
         {
             switch (option)
             {
                 case 1:
                     Console.Clear();
-                    AgregarClase();
+                    AgregarClase(mat);
                     break;
                 case 2:
                     Console.Clear();
-                    Clases claseElegida = ElegirClase();
+                    Clases claseElegida = ElegirClase(mat);
                     MostrarClase(claseElegida);
                     break;
             };
@@ -126,27 +126,22 @@ namespace ApuntesApp
             Console.ReadKey();
         }
 
-        private Clases ElegirClase()
+        private Clases ElegirClase(Materias mat)
         {
-            int claseElegida;
-            foreach (Clases cla in ListaDeClases)
+            Clases cla;
+            cla = mat.MostrarClases();
+            if (cla == null)
             {
-                Console.WriteLine($"{cla.numero} - {cla.Fecha}");
+                Console.WriteLine("Clase elegida inexistente ¡Vamos a crearla!");
+                return AgregarClase(mat);
             }
-            Console.WriteLine();
-            Console.Write("Clase elegida: ");
-            int.TryParse(Console.ReadLine(), out claseElegida);
-            foreach (Clases cla in ListaDeClases)
+            else
             {
-                if (claseElegida == cla.numero)
-                    return cla;
+                return cla;
             }
-
-            Console.WriteLine("Clase elegida inexistente");
-            return AgregarClase();
         }
 
-        private Clases AgregarClase()
+        private Clases AgregarClase(Materias mat)
         {
             int cantApuntes = 0;
             string apunte;
@@ -177,6 +172,7 @@ namespace ApuntesApp
 
             Clases cla = new Clases(nroClase, fecha, apuntes);
             ListaDeClases.Add(new Clases(nroClase, fecha, apuntes));
+            mat.AgregarApunte(cla);
             return cla;
         }
     }
